@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Generate coupons</button>
+    <script>
+        const button =document.getElementById("btn");
+        function getcoupon()
+        {
+            let characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let result =" "
+            let charactersLength = characters.length;
+            for(var i=0; i<10; i++)
+            {
+                result += characters.charAt(Math.floor(Math.random()*charactersLength));
+            }
+            document.write(result);
+        }
+        getcoupon();
+
+        button.addEventListener("click",getcoupon);
+
+    </script>
+
+</body>
+</html>

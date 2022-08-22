@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style1.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact us</h1>
+        <form action="#">
+            <div class="form first">
+                <div class="personal details">
+                    <div>
+                        <div class="input-icon">
+                            <label>Full name</label>
+                            <input id="name-value" class="input-field" type="text" placeholder="Enter Your Name">
+                            <span id="name-error" class="error"></span>
+                             <!-- <i class = 'fas fa-check-circle icon'></i> -->
+                        </div>
+
+                        <div class="input-icon">
+                            <label>email</label>
+                            <input id="email-value"  type="email" placeholder="enter your mail">
+                            <span id="email-error" class="error"></span>
+                        </div>
+
+                        <div class="input-icon">
+                            <label>contact number</label>
+                            <input id="number-value"  type="tel" placeholder="enter contact number">
+                            <span id="number-error" class="error"></span>
+                        </div>
+
+                        <div class="input-icon">
+                            <label>message</label>
+                            <input id="msg-value"  type="text" placeholder="give your message">
+                            <span id="msg-error" class="invalid"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div><button id="btn" type="submit">Submit form</button></div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./script1.js"></script>
+</body>
+</html>
